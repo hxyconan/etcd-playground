@@ -1,17 +1,17 @@
 # etcd cluster
-This repo including vagrant machine and relevant scripts and etcd commands to establish a 3 nodes etcd cluster
+This repo including vagrant machine and relevant etcd scripts to establish a 3-nodes etcd cluster
 
 ## How to init etcd cluster
-- Provision vagrant vm via `vagrant up`
+- provision vm via `vagrant up`
 - `vagrant ssh machine-1` and running `## machine-1` section codes in `init-etcd-script.sh` script file
-- same action to login `machine-2` and `machine-3`
+- same action to login `machine-2` and `machine-3` and run scripts
 
 ## How to check etcd member
 - `vagrant ssh machine-1` or any other vm
 - run the `## Check etcd members` codes in `check-etcd-member-script.sh` script file
 
 ## How to remove etcd member
-- Example
+Example:
 ```
 # remove the member
 MEMBER_ID=278c654c9a6dfd3b
