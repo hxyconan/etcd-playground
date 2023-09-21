@@ -11,12 +11,9 @@ This repo including vagrant machine and relevant etcd scripts to establish a 3-n
 - run the `## Check etcd members` codes in `check-etcd-member-script.sh` script file
 
 ## How to remove etcd member
-Example:
-```
-# remove the member
-MEMBER_ID=278c654c9a6dfd3b
-etcdctl --endpoints=${HOST_1}:2379,${HOST_2}:2379,${HOST_3}:2379 member remove ${MEMBER_ID}
-```
+- `vagrant ssh machine-1` or any other vm
+- run the `## Remove etcd members` codes in `remove-etcd-member-script.sh` script file
+
 
 ## References
 - https://etcd.io/docs/v3.6/tutorials/how-to-deal-with-membership/
